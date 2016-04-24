@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*Route::get('/', function () {
+    return view('About');
+    });
+ * 
+ */
+
+Route::get('About', 
+  ['as' => 'About', 'uses' => 'AboutController@create']);
+
+Route::get('Exp', 
+  ['as' => 'Exp', 'uses' => 'ExpController@create']);
